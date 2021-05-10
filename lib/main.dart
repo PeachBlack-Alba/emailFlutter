@@ -1,3 +1,5 @@
+import 'dart:html';
+
 import 'package:flutter/material.dart';
 
 void main() {
@@ -63,12 +65,7 @@ class _MyHomePageState extends State<MyHomePage> {
   Widget build(BuildContext context) {
     return Scaffold(
       key: _scaffoldKey,
-      body: NestedScrollView(
-        headerSliverBuilder: (BuildContext context, bool innerBoxIsScrolled) {
-          return <Widget>[
-            AppBarTransparentComponent(centerTitle: true, title: 'New Message', showBack: true, backgroundColor: TheBaseColors.lightBlue),
-          ];
-        },
+      appBar: AppBar(title: Text('Contact'),),
         body: Padding(
           padding: EdgeInsets.all(8.0),
           child: Column(
