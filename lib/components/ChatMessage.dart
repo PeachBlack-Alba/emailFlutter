@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:thebase_app/ui/styles/Colors.dart';
 
 enum MessageType { sent, received }
 
@@ -43,9 +42,9 @@ class ChatMessage extends StatelessWidget {
 
   Color messageBgColor(BuildContext context) {
     if (messageType == null || messageType == MessageType.received) {
-      return TheBaseColors.lightGreen;
+      return Colors.green;
     } else {
-      return TheBaseColors.lightBlue;
+      return Colors.blueAccent;
     }
   }
 
@@ -61,7 +60,7 @@ class ChatMessage extends StatelessWidget {
         time ?? 'Time',
         style: TextStyle(
           fontSize: 12.0,
-          color: TheBaseColors.lightGreen,
+          color: Colors.green,
         ),
       );
     } else {
