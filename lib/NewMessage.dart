@@ -23,13 +23,7 @@ class _NewMessageState extends State<NewMessage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      key: _scaffoldKey,
-      body: NestedScrollView(
-        headerSliverBuilder: (BuildContext context, bool innerBoxIsScrolled) {
-          return <Widget>[
-            AppBarTransparentComponent(centerTitle: true, title: 'New Message', showBack: true, backgroundColor: TheBaseColors.lightBlue),
-          ];
-        },
+   appBar: AppBar(title:Text( 'Messages')),
         body: Padding(
           padding: EdgeInsets.all(8.0),
           child: Column(
@@ -119,8 +113,7 @@ class _NewMessageState extends State<NewMessage> {
             ],
           ),
         ),
-      ),
-    );
+      );
   }
 
   Future imgFromGallery() async {

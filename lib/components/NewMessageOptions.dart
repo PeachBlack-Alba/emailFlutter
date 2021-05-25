@@ -47,10 +47,8 @@ class _NewMessageOptionsState extends State<NewMessageOptions> {
                             selectedIndex = position;
                             print('im tapped');
                             Navigator.pop(context);
-                            pushNewScreen(context,
-                                screen: Routes.getWidgetForRoute(Routes.newMessage, context),
-                                pageTransitionAnimation: PageTransitionAnimation.cupertino,
-                                withNavBar: true);
+
+
                           });
                         },
                         //     onTap: () => setState(() => selectedIndex = position),
@@ -64,7 +62,7 @@ class _NewMessageOptionsState extends State<NewMessageOptions> {
                               .size
                               .height / 10,
                           child: Card(
-                            shape: (selectedIndex == position) ? RoundedRectangleBorder(side: BorderSide(color: TheBaseColors.lightGreen, width: 5)) : null,
+                            shape: (selectedIndex == position) ? RoundedRectangleBorder(side: BorderSide(color: Colors.green, width: 5)) : null,
                             elevation: 5,
                             child: Column(
                               mainAxisAlignment: MainAxisAlignment.spaceAround,
