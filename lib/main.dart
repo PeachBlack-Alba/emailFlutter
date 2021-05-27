@@ -1,6 +1,10 @@
 import 'dart:html';
 
 import 'package:flutter/material.dart';
+import 'package:image_picker/image_picker.dart';
+import 'package:image/image.dart' as native_image;
+
+
 
 void main() {
   runApp(MyApp());
