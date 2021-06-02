@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 
-
 import 'components/ChatMessage.dart';
 import 'components/MessageBox.dart';
 
@@ -13,8 +12,9 @@ class _ChatScreenState extends State<ChatScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(title: Text('MessageOptions'),),
-
+      appBar: AppBar(
+        title: Text('MessageOptions'),
+      ),
       body: Stack(children: [
         Column(
           children: <Widget>[
@@ -57,8 +57,6 @@ class _ChatScreenState extends State<ChatScreen> {
           ],
         ),
       ]),
-    )
-    ,
     );
   }
 }

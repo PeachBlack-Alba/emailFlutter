@@ -99,7 +99,7 @@ class _NewMessageState extends State<NewMessage> {
                             ),
                             FlatButton(
                               onPressed: () => {},
-                              color: TheBaseColors.lightGreen,
+                              color: Colors.green,
                               padding: EdgeInsets.all(10.0),
                               child: Text('Send'),
                             ),
