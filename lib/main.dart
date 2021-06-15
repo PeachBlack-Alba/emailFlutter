@@ -38,11 +38,9 @@ class _MyHomePageState extends State<MyHomePage> {
       appBar: AppBar(
         title: Text('Contact App'),
       ),
-      body: Column(
-        children: [
+      body:
           ChatScreen()
-        ],
-      ),
-    );
+
+      );
   }
 }
