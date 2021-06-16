@@ -1,4 +1,5 @@
 import 'package:emailFlutter/ChatScreen.dart';
+import 'package:emailFlutter/NewMessage.dart';
 import 'package:flutter/material.dart';
 import 'package:image_picker/image_picker.dart';
 import 'package:image/image.dart' as native_image;
@@ -39,7 +40,7 @@ class _MyHomePageState extends State<MyHomePage> {
         title: Text('Contact App'),
       ),
       body:
-          ChatScreen()
+          NewMessage()
 
       );
   }

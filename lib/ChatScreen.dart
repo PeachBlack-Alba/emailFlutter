@@ -13,7 +13,7 @@ class _ChatScreenState extends State<ChatScreen> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('MessageOptions'),
+        title: Text('Chat Screen'),
       ),
       body: Stack(children: [
         Column(
