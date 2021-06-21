@@ -47,6 +47,10 @@ class _NewMessageOptionsState extends State<NewMessageOptions> {
                             selectedIndex = position;
                             print('im tapped');
                             Navigator.pop(context);
+                            pushNewScreen(context,
+                                screen: Routes.getWidgetForRoute(Routes.newMessage, context),
+                                pageTransitionAnimation: PageTransitionAnimation.cupertino,
+                                withNavBar: true);
 
 
                           });
