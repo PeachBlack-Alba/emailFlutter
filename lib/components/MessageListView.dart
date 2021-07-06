@@ -3,12 +3,12 @@ import 'package:flutter/material.dart';
 
 import 'MessageCard.dart';
 
-class Messages extends StatefulWidget {
+class MessageListView extends StatefulWidget {
   @override
-  _MessagesState createState() => _MessagesState();
+  _MessageListViewState createState() => _MessageListViewState();
 }
 
-class _MessagesState extends State<Messages> {
+class _MessageListViewState extends State<MessageListView> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(

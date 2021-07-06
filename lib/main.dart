@@ -5,6 +5,8 @@ import 'package:flutter/material.dart';
 import 'package:image_picker/image_picker.dart';
 import 'package:image/image.dart' as native_image;
 
+import 'components/MessageListView.dart';
+
 void main() {
   runApp(MyApp());
 }
@@ -36,13 +38,6 @@ class MyHomePage extends StatefulWidget {
 class _MyHomePageState extends State<MyHomePage> {
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
-      appBar: AppBar(
-        title: Text('Contact App'),
-      ),
-      body:
-          NewMessageOptions()
-
-      );
+    return Scaffold(body: MessageListView());
   }
 }

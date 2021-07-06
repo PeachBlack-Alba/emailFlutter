@@ -1,3 +1,6 @@
+import 'package:emailFlutter/NewMessage.dart';
+import 'package:emailFlutter/components/MessageBox.dart';
+import 'package:emailFlutter/components/MessageCard.dart';
 import 'package:flutter/material.dart';
 
 class IconMenu {
@@ -27,10 +30,10 @@ class _NewMessageOptionsState extends State<NewMessageOptions> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(title: Text('MessageOptions'),),
+      appBar: AppBar(
+        title: Text('MessageOptions'),
+      ),
       body: Column(
-        //crossAxisAlignment: CrossAxisAlignment.end,
-        //mainAxisAlignment: MainAxisAlignment.center,
         children: <Widget>[
           SingleChildScrollView(
             child: Column(
@@ -45,26 +48,16 @@ class _NewMessageOptionsState extends State<NewMessageOptions> {
                         onTap: () {
                           setState(() {
                             selectedIndex = position;
-                            print('im tapped');
-                            Navigator.pop(context);
-                            pushNewScreen(context,
-                                screen: Routes.getWidgetForRoute(Routes.newMessage, context),
-                                pageTransitionAnimation: PageTransitionAnimation.cupertino,
-                                withNavBar: true);
-
-
+                            Navigator.push(
+                              context,
+                              MaterialPageRoute(builder: (context) => NewMessage()),
+                            );
                           });
                         },
                         //     onTap: () => setState(() => selectedIndex = position),
                         child: Container(
-                          width: MediaQuery
-                              .of(context)
-                              .size
-                              .width,
-                          height: MediaQuery
-                              .of(context)
-                              .size
-                              .height / 10,
+                          width: MediaQuery.of(context).size.width,
+                          height: MediaQuery.of(context).size.height / 10,
                           child: Card(
                             shape: (selectedIndex == position) ? RoundedRectangleBorder(side: BorderSide(color: Colors.green, width: 5)) : null,
                             elevation: 5,
@@ -77,9 +70,7 @@ class _NewMessageOptionsState extends State<NewMessageOptions> {
                       );
                     },
                     gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
-                      crossAxisCount: MediaQuery
-                          .of(context)
-                          .orientation == Orientation.landscape ? 3 : 2,
+                      crossAxisCount: MediaQuery.of(context).orientation == Orientation.landscape ? 3 : 2,
                       crossAxisSpacing: 8,
                       mainAxisSpacing: 8,
                       childAspectRatio: (2 / 1),
