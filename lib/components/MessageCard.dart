@@ -1,5 +1,6 @@
 import 'package:emailFlutter/ChatScreen.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter/widgets.dart';
 
 class MessageCard extends StatefulWidget {
   @override
@@ -21,18 +22,16 @@ class _MessageCardState extends State<MessageCard> {
           width: MediaQuery.of(context).size.width,
           decoration: BoxDecoration(
             borderRadius: BorderRadius.circular(4),
-            border: Border.all(color: Colors.blueAccent, width: 3),
+            //  border: Border.all(color: Colors.blueAccent, width: 3),
           ),
           child: Row(
             children: <Widget>[
               Padding(
                 padding: const EdgeInsets.all(8.0),
                 child: Container(
-                  decoration: BoxDecoration(color: Colors.blueAccent, borderRadius: BorderRadius.circular(10.0)),
-                  child: Image.asset(
-                    'assets/img/woman.png',
-                    height: MediaQuery.of(context).size.height / 8,
-                    width: MediaQuery.of(context).size.width / 6,
+                  decoration: BoxDecoration(
+                    /////FIXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+                    image: DecorationImage(image:AssetImage('assets/img/solange.jpg')),
                   ),
                 ),
               ),
