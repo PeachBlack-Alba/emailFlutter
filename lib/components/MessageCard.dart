@@ -31,7 +31,7 @@ class _MessageCardState extends State<MessageCard> {
                 child: Container(
                   decoration: BoxDecoration(
                     /////FIXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
-                    image: DecorationImage(image:AssetImage('assets/img/solange.jpg')),
+                    image: DecorationImage(image:AssetImage('img/solange.jpg')),
                   ),
                 ),
               ),
