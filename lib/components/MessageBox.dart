@@ -26,7 +26,7 @@ class MessageBox extends StatelessWidget {
                   style: TextStyle(color: Colors.black, fontSize: 15.0),
                   controller: textEditingController,
                   decoration: InputDecoration.collapsed(
-                    hintText: 'Type a message',
+                    hintText: 'Write a message',
                     hintStyle: TextStyle(color:  Colors.blue),
                   ),
                 ),
