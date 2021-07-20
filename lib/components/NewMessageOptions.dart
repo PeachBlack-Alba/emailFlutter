@@ -1,6 +1,4 @@
 import 'package:emailFlutter/NewMessage.dart';
-import 'package:emailFlutter/components/MessageBox.dart';
-import 'package:emailFlutter/components/MessageCard.dart';
 import 'package:flutter/material.dart';
 
 class IconMenu {
