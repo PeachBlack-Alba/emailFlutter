@@ -59,7 +59,7 @@ class _NewMessageOptionsState extends State<NewMessageOptions> {
                           width: MediaQuery.of(context).size.width,
                           height: MediaQuery.of(context).size.height / 10,
                           child: Card(
-                            shape: (selectedIndex == position) ? RoundedRectangleBorder(side: BorderSide(color: Colors.green, width: 5)) : null,
+                            shape: (selectedIndex == position) ? RoundedRectangleBorder(side: BorderSide(color: Colors.amber, width: 5)) : null,
                             elevation: 5,
                             child: Column(
                               mainAxisAlignment: MainAxisAlignment.spaceAround,
